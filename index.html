@@ -1,228 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Innovative Energy Conservation Solutions</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(135deg, #0f2027, #2c5364, #f9f9f9);
-      color: #222;
-    }
-    header {
-      background: #0f2027;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-      position: relative;
-    }
-    header img {
-      width: 90px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin: 1rem 0;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 700;
-      transition: color 0.2s;
-    }
-    nav a:hover {
-      color: #ffd700;
-    }
-    .hero {
-      background: rgba(255,255,255,0.9);
-      margin: 2rem auto;
-      padding: 2rem;
-      border-radius: 1.5rem;
-      max-width: 900px;
-      box-shadow: 0 8px 32px rgba(44,83,100,0.15);
-      text-align: center;
-      animation: fadeIn 1s;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px);}
-      to { opacity: 1; transform: translateY(0);}
-    }
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-      margin: 2rem 0;
-    }
-    .service-card {
-      background: #fff;
-      border-radius: 1rem;
-      box-shadow: 0 4px 16px rgba(44,83,100,0.08);
-      padding: 1.5rem;
-      width: 260px;
-      transition: transform 0.2s, box-shadow 0.2s;
-      text-align: left;
-      cursor: pointer;
-    }
-    .service-card:hover {
-      transform: translateY(-8px) scale(1.03);
-      box-shadow: 0 8px 32px rgba(44,83,100,0.18);
-    }
-    .service-card h3 {
-      color: #0f2027;
-      margin-top: 0;
-    }
-    .contact, .company, .reviews {
-      max-width: 900px;
-      margin: 2rem auto;
-      background: #f9f9f9;
-      border-radius: 1rem;
-      padding: 1.5rem;
-      box-shadow: 0 2px 8px rgba(44,83,100,0.06);
-    }
-    .chatbot {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      z-index: 1000;
-      background: #fff;
-      border-radius: 50px;
-      box-shadow: 0 4px 16px rgba(44,83,100,0.18);
-      padding: 0.5rem 1rem;
-      font-weight: 700;
-      color: #0f2027;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-    .chatbot:hover {
-      background: #ffd700;
-      color: #0f2027;
-    }
-    @media (max-width: 700px) {
-      .services { flex-direction: column; align-items: center; }
-      .service-card { width: 90vw; }
-      .hero, .contact, .company, .reviews { padding: 1rem; }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IECS – Innovative Energy Conservation Solutions | Mohali</title>
+  <meta name="description" content="Expert in Sustainability, Energy, Water & Waste Management footprint reduction technologies helping industries optimize resource consumption and drive sustainability. Mohali, Punjab." />
+  <meta name="keywords" content="energy audit, electrical consultancy, infrared thermography, GHG verification, EC fan, energy efficiency, Mohali, Punjab, IECS" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="IECS – Innovative Energy Conservation Solutions" />
+  <meta property="og:description" content="Sustainability & Energy experts in Mohali. Audits, Consultancy, EC Fans & more." />
+  <meta property="og:type" content="website" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/services.css" />
+  <link rel="stylesheet" href="css/chatbot.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
 </head>
 <body>
-  <header>
-    <img src="https://5.imimg.com/data5/SELLER/Logo/2025/8/532874391/TO/JO/JL/81337127/new-logo-2024-90x90.png" alt="IECS Logo">
-    <h1>Innovative Energy Conservation Solutions</h1>
-    <nav>
-      <a href="https://www.iecsolutions.in/profile.html">About Us</a>
-      <a href="https://www.iecsolutions.in/audit-and-electrical-consultancy-services.html">Our Services</a>
-      <a href="https://www.iecsolutions.in/enquiry.html">Contact Us</a>
-      <a href="https://www.iecsolutions.in/sitemap.html">Sitemap</a>
-    </nav>
-  </header>
-  <section class="hero">
-    <h2>Expert in Sustainability, Energy, Water, Waste Management Footprint Reduction</h2>
-    <p>Technologies & equipment monitoring, helping industries optimize resource consumption & drive sustainability.</p>
-    <a href="https://www.iecsolutions.in/profile.html" style="display:inline-block;margin-top:1rem;background:#0f2027;color:#fff;padding:0.7rem 1.5rem;border-radius:30px;text-decoration:none;font-weight:700;">Read More</a>
-  </section>
-  <section class="services">
-    <div class="service-card">
-      <h3><a href="https://www.iecsolutions.in/audit-services.html">Audit Services</a></h3>
-      <ul>
-        <li><a href="https://www.iecsolutions.in/audit-services.html#electrical-safety-and-earthing-system-audit">Electrical Safety & Earthing Audit</a></li>
-        <li><a href="https://www.iecsolutions.in/audit-services.html#pumping-efficiency-analysis-audit-service">Pumping Efficiency Analysis</a></li>
-        <li><a href="https://www.iecsolutions.in/audit-services.html#power-quality-harmonics-audit-services">Power Quality Harmonics Audit</a></li>
-      </ul>
-    </div>
-    <div class="service-card">
-      <h3><a href="https://www.iecsolutions.in/electrical-consultancy-services.html">Electrical Consultancy Services</a></h3>
-      <ul>
-        <li><a href="https://www.iecsolutions.in/electrical-consultancy-services.html#plant-electrical-design-consultancy-services">Plant Electrical Design Consultancy</a></li>
-      </ul>
-    </div>
-    <div class="service-card">
-      <h3><a href="https://www.iecsolutions.in/validation-service.html">Validation Service</a></h3>
-      <ul>
-        <li><a href="https://www.iecsolutions.in/validation-service.html#ghg-verification-validation-service">GHG Verification Validation</a></li>
-      </ul>
-    </div>
-    <div class="service-card">
-      <h3><a href="https://www.iecsolutions.in/infrared-thermography-services.html">Infrared Thermography Services</a></h3>
-      <ul>
-        <li><a href="https://www.iecsolutions.in/infrared-thermography-services.html#infrared-thermography-services">Infrared Thermography</a></li>
-      </ul>
-    </div>
-    <div class="service-card">
-      <h3><a href="https://www.iecsolutions.in/energy-efficiency-services.html">Energy Efficiency Services</a></h3>
-      <ul>
-        <li><a href="https://www.iecsolutions.in/energy-efficiency-services.html#energy-efficiency-conservation-training-service">Conservation Training</a></li>
-      </ul>
-    </div>
-    <div class="service-card">
-      <h3><a href="https://www.iecsolutions.in/ec-fan.html">EC Fan</a></h3>
-      <ul>
-        <li><a href="https://www.iecsolutions.in/ec-fan.html#ec-centrifugal-fan">EC Centrifugal Fan</a></li>
-      </ul>
-    </div>
-  </section>
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Contact Person:</strong> Khalid Khan | Manager</p>
-    <p><strong>Address:</strong> House No. 1337 Ist Floor, Old Sunny Enclave, Near Gurudwara Sahib, Mohali, Mohali - 140413, Punjab, India</p>
-    <p><strong>Phone:</strong> <a href="tel:07948549066">07948549066</a></p>
-    <p><strong>GST No.:</strong> 03CFHPD4550A1Z8</p>
-    <p>
-      <a href="https://maps.google.com/?q=30.74263000,76.66930000" target="_blank">Get Directions</a>
-    </p>
-    <form>
-      <input type="text" placeholder="Your Name" style="padding:0.5rem;margin:0.5rem;width:40%;">
-      <input type="email" placeholder="Your Email" style="padding:0.5rem;margin:0.5rem;width:40%;">
-      <textarea placeholder="Your Message" style="padding:0.5rem;margin:0.5rem;width:85%;height:80px;"></textarea>
-      <br>
-      <button type="submit" style="background:#0f2027;color:#fff;padding:0.7rem 1.5rem;border-radius:30px;font-weight:700;border:none;">Submit</button>
-    </form>
-    <div style="margin-top:1rem;">
-      <a href="https://www.facebook.com/sharer.php?u=https://www.iecsolutions.in/" target="_blank">Facebook</a> |
-      <a href="https://twitter.com/share?url=https://www.iecsolutions.in/&text=Innovative%20Energy%20Conservation%20Solutions" target="_blank">Twitter</a> |
-      <a href="https://www.linkedin.com/cws/share?url=https://www.iecsolutions.in/" target="_blank">LinkedIn</a>
-    </div>
-  </section>
-  <section class="company">
-    <h2>Our Company</h2>
-    <ul>
-      <li>Nature of Business: Service Provider and Others</li>
-      <li>Total Number of Employees: 11 to 25 People</li>
-      <li>Annual Turnover: 40 L - 1.5 Cr</li>
-      <li>Legal Status of Firm: Proprietorship</li>
-      <li>GST Registration Date: 16-09-2021</li>
+
+  <!-- Custom cursor (hidden on mobile) -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+        <circle cx="20" cy="20" r="18" stroke="#00c853" stroke-width="1.5"/>
+        <path d="M20 8 L24 18 L32 18 L26 24 L28 32 L20 27 L12 32 L14 24 L8 18 L16 18 Z" fill="#00c853" opacity="0.85"/>
+      </svg>
+      IEC<span>S</span>olutions
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" class="nav-cta">Contact Us</a></li>
     </ul>
-  </section>
-  <section class="reviews">
-    <h2>Ratings & Reviews</h2>
-    <div>
-      <span style="font-size:2rem;color:#ffd700;">★</span> 4/5 (Reviewed by 1 User)
-      <ul>
-        <li>5★ 0</li>
-        <li>4★ 1</li>
-        <li>3★ 0</li>
-        <li>2★ 0</li>
-        <li>1★ 0</li>
-      </ul>
-      <blockquote>
-        <strong>Nayan Halol, Gujarat</strong> <br>
-        Product Name: Electrical Design Consultancy
-      </blockquote>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Sustainability Experts · Mohali, Punjab
+      </div>
+      <h1 class="hero-title">
+        Innovative <span class="accent">Energy</span>
+        <span class="line2">Conservation</span>
+        Solutions
+      </h1>
+      <p class="hero-desc">
+        Expert in Sustainability, Energy, Water &amp; Waste Management footprint reduction technologies &amp; equipment monitoring — helping industries optimize resource consumption and drive sustainability.
+      </p>
+      <div class="hero-actions">
+        <a href="#services" class="btn-primary">
+          Explore Services
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#contact" class="btn-outline">Get a Free Audit</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">10+</div>
+          <div class="stat-label">Years of Expertise</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">200+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">9+</div>
+          <div class="stat-label">Service Categories</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">PAN</div>
+          <div class="stat-label">India Reach</div>
+        </div>
+      </div>
+    </div>
+    <!-- Decorative animated ring -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="energy-ring">
+        <svg viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="210" cy="210" r="195" stroke="rgba(0,200,83,0.12)" stroke-width="1"/>
+          <circle cx="210" cy="210" r="160" stroke="rgba(0,200,83,0.18)" stroke-width="1" stroke-dasharray="6 8"/>
+          <circle cx="210" cy="210" r="125" stroke="rgba(0,200,83,0.1)" stroke-width="1"/>
+          <circle cx="210" cy="210" r="90" stroke="rgba(0,200,83,0.25)" stroke-width="1.5" stroke-dasharray="4 6"/>
+          <path d="M210 120 L230 190 L260 190 L200 300 L220 215 L185 215 Z" fill="rgba(0,200,83,0.7)" stroke="#00c853" stroke-width="1.5" stroke-linejoin="round"/>
+          <circle cx="210" cy="15" r="5" fill="#00c853" opacity="0.8"/>
+          <circle cx="370" cy="110" r="4" fill="#00c853" opacity="0.5"/>
+          <circle cx="395" cy="210" r="6" fill="#00c853" opacity="0.6"/>
+          <circle cx="360" cy="330" r="3" fill="#00c853" opacity="0.4"/>
+          <circle cx="210" cy="400" r="5" fill="#00c853" opacity="0.7"/>
+          <circle cx="50" cy="310" r="4" fill="#00c853" opacity="0.5"/>
+          <circle cx="22" cy="190" r="5" fill="#00c853" opacity="0.6"/>
+          <circle cx="60" cy="95" r="3" fill="#00c853" opacity="0.4"/>
+        </svg>
+        <div class="energy-ring-inner"></div>
+      </div>
     </div>
   </section>
-  <footer style="text-align:center;padding:2rem 1rem;background:#2c5364;color:#fff;">
-    <p>© Innovative Energy Conservation Solutions. All Rights Reserved | <a href="https://www.indiamart.com/terms-of-use.html" style="color:#ffd700;">Terms of Use</a></p>
-    <p>Developed and managed by <a href="https://corporate.indiamart.com/" style="color:#ffd700;">IndiaMART InterMESH Ltd.</a></p>
-  </footer>
-  <div class="chatbot" onclick="alert('AI Chatbot coming soon!')">
-    🤖 Chat with IECS
+
+  <!-- ===================== TICKER ===================== -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-inner">
+      <span class="ticker-item"><span class="ticker-dot"></span>Energy Audits</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Electrical Consultancy</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>GHG Verification</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Infrared Thermography</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>EC Fans &amp; Blowers</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Power Quality Audits</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Pumping Efficiency</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Cooling Tower Solutions</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Sustainability Consulting</span>
+      <!-- Duplicate for seamless loop -->
+      <span class="ticker-item"><span class="ticker-dot"></span>Energy Audits</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Electrical Consultancy</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>GHG Verification</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Infrared Thermography</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>EC Fans &amp; Blowers</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Power Quality Audits</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Pumping Efficiency</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Cooling Tower Solutions</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Sustainability Consulting</span>
+    </div>
   </div>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section id="services">
+    <div class="services-header">
+      <div>
+        <div class="section-label reveal">Our Services</div>
+        <h2 class="section-title reveal reveal-delay-1">Comprehensive Energy &amp;<br/>Sustainability Solutions</h2>
+      </div>
+      <p class="section-subtitle reveal reveal-delay-2">From detailed audits to cutting-edge equipment, we cover every aspect of your energy optimization journey.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">⚡</div>
+        <div class="service-name">Electrical Safety &amp; Earthing Audit</div>
+        <p class="service-desc">Comprehensive assessment of your electrical systems, earthing integrity, and safety compliance to prevent failures and ensure regulatory adherence.</p>
+        <a href="#contact" class="service-arrow">Enquire Now →</a>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">🔍</div>
+        <div class="service-name">Power Quality &amp; Harmonics Audit</div>
+        <p class="service-desc">Detailed analysis of power quality parameters, harmonic distortions, and energy wastage to optimize your power infrastructure and reduce costs.</p>
+        <a href="#contact" class="service-arrow">Enquire Now →</a>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">💧</div>
+        <div class="service-name">Pumping Efficiency Analysis</div>
+        <p class="service-desc">In-depth audit of pumping systems to identify inefficiencies, reduce energy consumption, and extend equipment life through optimization strategies.</p>
+        <a href="#contact" class="service-arrow">Enquire Now →</a>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon">🏗️</div>
+        <div class="service-name">Plant Electrical Design Consultancy</div>
+        <p class="service-desc">End-to-end electrical design solutions for industrial plants — from single-line diagrams to full electrical layout design and documentation.</p>
+        <a href="#contact" class="service-arrow">Enquire Now →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🌡️</div>
+        <div class="service-name">Infrared Thermography Services</div>
+        <p class="service-desc">Non-destructive thermal imaging inspection of electrical panels, motors, and industrial equipment to detect hotspots before costly failures occur.</p>
+        <a href="#contact" class="service-arrow">Enquire Now →</a>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">🌿</div>
+        <div class="service-name">GHG Verification &amp; Validation</div>
+        <p class="service-desc">Third-party verification and validation of greenhouse gas emissions inventories, carbon credits, and sustainability reporting per international standards.</p>
+        <a href="#contact" class="service-arrow">Enquire Now →</a>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">🌀</div>
+        <div class="service-name">EC Fan &amp; Centrifugal Blower</div>
+        <p class="service-desc">Supply and installation of high-efficiency electronically commutated fans and centrifugal blowers for significant energy savings in HVAC and industrial processes.</p>
+        <a href="#contact" class="service-arrow">Enquire Now →</a>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon">🎓</div>
+        <div class="service-name">Energy Efficiency Conservation Training</div>
+        <p class="service-desc">Hands-on training for your workforce on energy conservation practices, BEE certification preparation, and sustainable industrial operations.</p>
+        <a href="#contact" class="service-arrow">Enquire Now →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🌊</div>
+        <div class="service-name">Energy Efficient Cooling Tower</div>
+        <p class="service-desc">Modern cooling tower solutions with carbon composite fans and variable-speed drives, delivering up to 40% energy savings in cooling water systems.</p>
+        <a href="#contact" class="service-arrow">Enquire Now →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY US ===================== -->
+  <section id="why">
+    <div class="why-grid">
+      <div class="why-content">
+        <div class="section-label reveal">Why Choose IECS</div>
+        <h2 class="section-title reveal reveal-delay-1">Trusted by Industries<br/>Across India</h2>
+        <p class="section-subtitle reveal reveal-delay-2">We combine deep technical expertise with practical experience to deliver measurable energy savings and sustainable outcomes for your operations.</p>
+        <a href="#contact" class="btn-primary reveal reveal-delay-3" style="margin-top:2rem;display:inline-flex">
+          Start Your Project
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+      <div class="why-card-stack">
+        <div class="why-card reveal">
+          <div class="why-card-num">01</div>
+          <div class="why-card-text">
+            <h4>Certified &amp; Experienced Team</h4>
+            <p>Our engineers hold BEE certifications and have hands-on experience across diverse industrial sectors including pharmaceuticals, manufacturing, and utilities.</p>
+          </div>
+        </div>
+        <div class="why-card reveal reveal-delay-1">
+          <div class="why-card-num">02</div>
+          <div class="why-card-text">
+            <h4>Measurable Energy Savings</h4>
+            <p>Every project delivers quantified ROI. Our clients typically see 15–40% reduction in energy costs within the first year of implementation.</p>
+          </div>
+        </div>
+        <div class="why-card reveal reveal-delay-2">
+          <div class="why-card-num">03</div>
+          <div class="why-card-text">
+            <h4>End-to-End Solutions</h4>
+            <p>From initial audit to equipment supply, installation, and training — we are your single-point partner for all energy and sustainability initiatives.</p>
+          </div>
+        </div>
+        <div class="why-card reveal reveal-delay-3">
+          <div class="why-card-num">04</div>
+          <div class="why-card-text">
+            <h4>Regulatory Compliance Support</h4>
+            <p>We help you navigate BEE, GHG reporting, and electrical safety regulations, ensuring your facility remains fully compliant at all times.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESS ===================== -->
+  <section id="process">
+    <div class="section-label reveal">How We Work</div>
+    <h2 class="section-title reveal reveal-delay-1">Our Proven 5-Step Process</h2>
+    <p class="section-subtitle reveal reveal-delay-2" style="margin-bottom:3rem">A structured, transparent approach from first contact to final savings report.</p>
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="step-num">01</div>
+        <div class="step-title">Initial Consultation</div>
+        <p class="step-desc">We understand your facility, energy bills, operational challenges, and sustainability goals through a free discovery call.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-1">
+        <div class="step-num">02</div>
+        <div class="step-title">On-Site Audit</div>
+        <p class="step-desc">Our certified engineers visit your plant with state-of-the-art instruments to measure, monitor, and analyse all energy systems.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-2">
+        <div class="step-num">03</div>
+        <div class="step-title">Detailed Report</div>
+        <p class="step-desc">You receive a comprehensive report with findings, savings potential, ROI calculations, and prioritized recommendations.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-3">
+        <div class="step-num">04</div>
+        <div class="step-title">Implementation</div>
+        <p class="step-desc">We support or directly execute recommended changes — equipment supply, electrical upgrades, and process optimizations.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-4">
+        <div class="step-num">05</div>
+        <div class="step-title">Monitoring &amp; Training</div>
+        <p class="step-desc">Post-implementation monitoring, performance verification, and staff training ensures the savings are sustained long-term.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-info">
+        <div class="section-label reveal">About IECS</div>
+        <h2 class="reveal reveal-delay-1">Mohali's Leading Energy &amp;<br/>Sustainability Consultancy</h2>
+        <p class="reveal reveal-delay-2">Innovative Energy Conservation Solutions (IECS) is a Mohali-based consultancy specializing in Sustainability, Energy, Water, and Waste Management footprint reduction technologies and equipment monitoring.</p>
+        <p class="reveal reveal-delay-2">We help industries across India optimize resource consumption, drive sustainability, and achieve measurable cost savings — backed by certified engineers, modern diagnostic tools, and a commitment to long-term client success.</p>
+        <div class="about-facts reveal reveal-delay-3">
+          <div class="fact-item">
+            <div class="fact-label">Nature of Business</div>
+            <div class="fact-val">Service Provider</div>
+          </div>
+          <div class="fact-item">
+            <div class="fact-label">Team Size</div>
+            <div class="fact-val">11–25 Professionals</div>
+          </div>
+          <div class="fact-item">
+            <div class="fact-label">Legal Status</div>
+            <div class="fact-val">Proprietorship</div>
+          </div>
+          <div class="fact-item">
+            <div class="fact-label">GST No.</div>
+            <div class="fact-val" style="font-size:0.82rem">03CFHPD4550A1Z8</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-map reveal reveal-delay-2">
+        <div class="map-pin">📍</div>
+        <div>
+          <div class="map-company-name">Innovative Energy Conservation Solutions</div>
+          <p class="map-address">
+            House No. 1337, 1st Floor<br/>
+            Old Sunny Enclave, Near Gurudwara Sahib<br/>
+            Mohali – 140413, Punjab, India
+          </p>
+        </div>
+        <div class="map-contact-row">
+          <a href="tel:07948549066" class="map-link">📞 07948549066</a>
+          <a href="https://maps.google.com?q=30.74263000,76.66930000" target="_blank" rel="noopener" class="map-link">🗺 Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="section-label reveal">Get In Touch</div>
+        <h2 class="reveal reveal-delay-1">Start Your Energy<br/>Saving Journey</h2>
+        <p class="reveal reveal-delay-2">Reach out to us for a free initial consultation. Whether you need a full energy audit or just want to understand your options, our experts are ready to help.</p>
+        <div class="contact-detail reveal reveal-delay-2">
+          <div class="contact-detail-icon">📞</div>
+          <div class="contact-detail-text">
+            <span>Call Us</span>
+            <a href="tel:07948549066">07948549066</a>
+          </div>
+        </div>
+        <div class="contact-detail reveal reveal-delay-3">
+          <div class="contact-detail-icon">📧</div>
+          <div class="contact-detail-text">
+            <span>Email Us</span>
+            <a href="mailto:info@iecsolutions.in">info@iecsolutions.in</a>
+          </div>
+        </div>
+        <div class="contact-detail reveal reveal-delay-3">
+          <div class="contact-detail-icon">📍</div>
+          <div class="contact-detail-text">
+            <span>Visit Us</span>
+            <strong>Old Sunny Enclave, Mohali, Punjab – 140413</strong>
+          </div>
+        </div>
+        <div class="contact-detail reveal reveal-delay-4">
+          <div class="contact-detail-icon">👤</div>
+          <div class="contact-detail-text">
+            <span>Contact Person</span>
+            <strong>Khalid Khan – Manager</strong>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal reveal-delay-1">
+        <h3 class="form-heading">Send Us an Enquiry</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-name">Your Name *</label>
+            <input type="text" id="f-name" placeholder="e.g. Rajiv Sharma" />
+          </div>
+          <div class="form-group">
+            <label for="f-phone">Phone Number *</label>
+            <input type="tel" id="f-phone" placeholder="+91 98765 43210" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="f-email">Email Address</label>
+          <input type="email" id="f-email" placeholder="you@company.com" />
+        </div>
+        <div class="form-group">
+          <label for="f-service">Service of Interest</label>
+          <select id="f-service">
+            <option value="">Select a service...</option>
+            <option>Electrical Safety &amp; Earthing Audit</option>
+            <option>Power Quality &amp; Harmonics Audit</option>
+            <option>Pumping Efficiency Analysis</option>
+            <option>Plant Electrical Design Consultancy</option>
+            <option>Infrared Thermography Services</option>
+            <option>GHG Verification &amp; Validation</option>
+            <option>EC Fan / Centrifugal Blower</option>
+            <option>Energy Efficiency Training</option>
+            <option>Cooling Tower Solutions</option>
+            <option>General Enquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="f-message">Your Message</label>
+          <textarea id="f-message" placeholder="Tell us about your facility, current challenges, or what you'd like to achieve..."></textarea>
+        </div>
+        <div class="form-submit-row">
+          <p class="form-note">We respond within 1 business day.</p>
+          <button class="btn-primary" id="form-btn" onclick="submitForm()">
+            Send Enquiry
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M2 8l10 0M8 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <div id="form-success">✅ Thank you! We'll be in touch within 1 business day.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo footer-logo">
+          <svg viewBox="0 0 40 40" fill="none" width="28" height="28">
+            <circle cx="20" cy="20" r="18" stroke="#00c853" stroke-width="1.5"/>
+            <path d="M20 8 L24 18 L32 18 L26 24 L28 32 L20 27 L12 32 L14 24 L8 18 L16 18 Z" fill="#00c853" opacity="0.85"/>
+          </svg>
+          IEC<span>S</span>olutions
+        </a>
+        <p>Innovative Energy Conservation Solutions — your trusted partner for energy audits, sustainability consulting, and efficiency optimization across India.</p>
+        <div class="footer-gst">GST: <span>03CFHPD4550A1Z8</span> &nbsp;|&nbsp; Mohali, Punjab</div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Audit Services</a></li>
+          <li><a href="#services">Electrical Consultancy</a></li>
+          <li><a href="#services">Validation Services</a></li>
+          <li><a href="#services">IR Thermography</a></li>
+          <li><a href="#services">EC Fan &amp; Blowers</a></li>
+          <li><a href="#services">Cooling Tower</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#why">Why IECS</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:07948549066">📞 07948549066</a></li>
+          <li><a href="mailto:info@iecsolutions.in">✉ info@iecsolutions.in</a></li>
+          <li><a href="https://maps.google.com?q=30.74263,76.66930" target="_blank" rel="noopener">📍 Mohali, Punjab</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Innovative Energy Conservation Solutions. All Rights Reserved.</p>
+      <p>Contact: Khalid Khan | Manager</p>
+    </div>
+  </footer>
+
+  <!-- ===================== AI CHATBOT ===================== -->
+  <button id="chat-btn" onclick="toggleChat()" aria-label="Open AI Assistant">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+      <path d="M12 2C6.48 2 2 6.03 2 11c0 2.66 1.24 5.04 3.2 6.68L4 20l3.2-1.06C8.54 19.61 10.23 20 12 20c5.52 0 10-4.03 10-9S17.52 2 12 2Z" fill="var(--navy)"/>
+      <path d="M8 10.5h8M8 13.5h5" stroke="var(--navy)" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+    <span class="chat-btn-label">Ask AI</span>
+  </button>
+
+  <div id="chat-window" role="dialog" aria-label="IECS AI Assistant">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar">⚡</div>
+        <div>
+          <div class="chat-name">IECS AI Assistant</div>
+          <div class="chat-status">Online · Powered by Claude AI</div>
+        </div>
+      </div>
+      <button class="chat-close" onclick="toggleChat()" aria-label="Close chat">✕</button>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+      <div class="msg bot">
+        👋 Hi! I'm the IECS AI Assistant. I can help you understand our energy conservation and sustainability services, answer your queries, or connect you with our team.<br/><br/>
+        What would you like to know?
+        <div class="chat-quick-btns">
+          <button class="quick-btn" onclick="quickAsk('What services does IECS offer?')">Our Services</button>
+          <button class="quick-btn" onclick="quickAsk('How do I get an energy audit?')">Get an Audit</button>
+          <button class="quick-btn" onclick="quickAsk('What are EC Fans and their benefits?')">EC Fans</button>
+          <button class="quick-btn" onclick="quickAsk('How can I contact IECS?')">Contact Info</button>
+        </div>
+      </div>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" id="chat-input" placeholder="Type your question..." onkeydown="if(event.key==='Enter')sendChat()" aria-label="Chat message" />
+      <button id="chat-send" onclick="sendChat()" aria-label="Send message">
+        <svg viewBox="0 0 24 24" fill="none" width="17" height="17">
+          <path d="M22 2L11 13M22 2L15 22 11 13 2 9l20-7z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/cursor.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/chatbot.js"></script>
 </body>
 </html>
